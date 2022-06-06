@@ -1,4 +1,5 @@
 import "./App.css";
+import ColorList from "./components/ColorList";
 import ColorProvider from "./data/ColorProvider";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
         </header>
         <main>
           <h2>Color Rating</h2>
+          <ColorList />
         </main>
       </div>
     </ColorProvider>
