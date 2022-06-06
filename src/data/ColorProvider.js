@@ -12,7 +12,13 @@ export default function ColorProvider({ children }) {
 
   const removeColor = (id) => {};
 
-  const rateColor = (color, rating) => {};
+  const rateColor = (id) => {
+    const newColors = Colors.map((color) => {
+      if (color.id === id) return { ...color, rating: color.rating + 1 };
+      else return color;
+    });
+    setColors(newColors);
+  };
 
   return (
     <ColorContext.Provider value={{ Colors, addColor, removeColor, rateColor }}>

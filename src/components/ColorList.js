@@ -3,12 +3,12 @@ import { useColors } from "../data/ColorProvider";
 import Color from "./Color";
 
 export default function ColorList() {
-  const { Colors } = useColors();
+  const { Colors, rateColor } = useColors();
 
   return (
     <div className="container">
       {Colors.map((color) => (
-        <Color key={color.id} color={color} />
+        <Color key={color.id} color={color} rateColor={rateColor} />
       ))}
     </div>
   );
