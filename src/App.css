@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #f6f8fa;
 }
 
 .App-logo {
@@ -38,7 +39,6 @@
 }
 
 main {
-  background-color: #f6f8fa;
   max-width: 768px;
   margin: 3rem auto;
   padding: 2rem 3rem 3rem;
@@ -47,8 +47,9 @@ main {
 .card {
   display: flex;
   -webkit-box-pack: justify;
-  padding: 2rem;
-  align-items: center;
+  flex-flow: column;
+  padding: 1rem 1rem;
+  align-items: flex-start;
   margin: 1rem;
   text-align: left;
   color: rgb(88, 96, 105);
@@ -60,20 +61,45 @@ main {
 
 .card_body,
 .card_header {
-  padding: 0 1rem;
 }
 
 .card_header {
-  height: 50px;
-  width: 50px;
+  height: 80px;
+  width: 100%;
   align-self: stretch;
 }
 
 .card_body h3 {
-  font-size: 16px;
+  font-size: 24px;
+  text-align: left;
+  margin-top: 1rem;
 }
 
 button {
-  margin: 0.5rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 16px;
+  margin: 1rem 0.5rem;
+  padding: 0.2rem 0.6rem;
+  background-color: #dddddd;
+  color: cornflowerblue;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+}
+
+button:active {
+  background-color: #adadad;
+}
+
+.card > button {
+  margin: 0.2rem 0;
+}
+
+.card_body span {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.card_body p {
+  display: flex;
+  align-items: center;
 }
