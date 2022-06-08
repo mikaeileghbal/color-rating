@@ -20,7 +20,10 @@ function App() {
           </Routes>
         </BrowserRouter>
         <footer>
-          <p>Created with React.js and React Context</p>
+          <p>
+            Created with <span>React.js</span>, <span>React Router</span> and{" "}
+            <span>React Context</span>
+          </p>
         </footer>
       </div>
     </ColorProvider>
