@@ -1,7 +1,11 @@
+/* eslint-disable no-unused-vars */
+
 import React, { useState } from "react";
 import { useNavigate } from "react-router";
 import { useColors } from "../data/ColorProvider";
 import LinkButton from "./LinkButton";
+
+let error = "error";
 
 export default function AddColor() {
   const [fields, setFields] = useState({ name: "white", color: "#FFFFFF" });
